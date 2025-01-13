@@ -2,20 +2,110 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
+/* Global font settings */
 body {
-  color: var(--foreground);
-  background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Light mode variables */
+@layer base {
+  :root {
+    --background: 40 90% 96%; /* Soft Ivory */
+    --foreground: 222 13% 12%; /* Charcoal Gray */
+
+    --primary: 146 43% 35%; /* Deep Emerald Green */
+    --primary-foreground: 0 0% 100%; /* White */
+
+    --secondary: 46 85% 53%; /* Warm Gold */
+    --secondary-foreground: 222 13% 12%; /* Charcoal Gray */
+
+    --accent: 355 54% 31%; /* Rich Burgundy */
+    --accent-foreground: 0 0% 100%; /* White */
+
+    --muted: 240 4% 87%; /* Light Gray */
+    --muted-foreground: 240 5% 24%; /* Dark Gray */
+
+    --card: 0 0% 100%; /* Pure White */
+    --card-foreground: 222 13% 12%; /* Charcoal Gray */
+
+    --popover: 0 0% 100%; /* Pure White */
+    --popover-foreground: 222 13% 12%; /* Charcoal Gray */
+
+    --destructive: 0 75% 54%; /* Bright Red */
+    --destructive-foreground: 0 0% 100%; /* White */
+
+    --border: 240 5% 90%; /* Light Gray Border */
+    --input: 240 5% 90%; /* Light Gray Input */
+    --ring: 146 50% 70%; /* Emerald Green Highlight */
+
+    --chart-1: 146 43% 35%; /* Emerald Green */
+    --chart-2: 46 85% 53%; /* Warm Gold */
+    --chart-3: 355 54% 31%; /* Rich Burgundy */
+    --chart-4: 240 4% 87%; /* Light Gray */
+    --chart-5: 0 75% 54%; /* Bright Red */
+
+    --radius: 0.5rem;
+  }
+
+  /* Dark mode variables */
+  .dark {
+    --background: 222 13% 12%; /* Charcoal Gray */
+    --foreground: 40 90% 96%; /* Soft Ivory */
+
+    --primary: 146 43% 25%; /* Darker Emerald Green */
+    --primary-foreground: 0 0% 100%; /* White */
+
+    --secondary: 46 85% 43%; /* Darker Warm Gold */
+    --secondary-foreground: 40 90% 96%; /* Soft Ivory */
+
+    --accent: 355 54% 21%; /* Darker Rich Burgundy */
+    --accent-foreground: 40 90% 96%; /* Soft Ivory */
+
+    --muted: 222 15% 25%; /* Dark Muted */
+    --muted-foreground: 240 5% 87%; /* Lighter Gray */
+
+    --card: 222 15% 25%; /* Dark Card Background */
+    --card-foreground: 40 90% 96%; /* Soft Ivory */
+
+    --popover: 222 15% 25%; /* Dark Popover Background */
+    --popover-foreground: 40 90% 96%; /* Soft Ivory */
+
+    --destructive: 0 62.8% 30.6%; /* Darker Bright Red */
+    --destructive-foreground: 40 90% 96%; /* Soft Ivory */
+
+    --border: 222 20% 30%; /* Darker Gray Border */
+    --input: 222 20% 30%; /* Darker Gray Input */
+    --ring: 146 43% 45%; /* Softer Emerald Green Highlight */
+
+    --chart-1: 146 43% 25%; /* Darker Emerald Green */
+    --chart-2: 46 85% 43%; /* Darker Warm Gold */
+    --chart-3: 355 54% 21%; /* Darker Rich Burgundy */
+    --chart-4: 222 15% 25%; /* Dark Muted Gray */
+    --chart-5: 0 62.8% 30.6%; /* Darker Bright Red */
+  }
+
+  /* Global styles */
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+
+  button {
+    @apply bg-primary text-primary-foreground rounded-lg p-2 transition-all;
+  }
+
+  button:hover {
+    @apply bg-secondary text-secondary-foreground;
+  }
+
+  input, textarea {
+    @apply bg-input text-foreground border border-border rounded-md p-2;
+  }
+
+  .card {
+    @apply bg-card text-card-foreground shadow-md rounded-lg p-4;
+  }
 }
