@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import Image from 'next/image'
-import wandering from '@/public/wandering.svg'
+import wandering from '@/public/Wandering.svg'
 
 
 export default function NavBar(){
