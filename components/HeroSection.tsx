@@ -1,6 +1,7 @@
 import Image from "next/image";
-import {Button} from '@/components/ui/button'
+
 import wine from '@/public/wine.png'
+import Link from "next/link";
 
 export default function HeroSection() {
   return (
@@ -15,13 +16,16 @@ export default function HeroSection() {
           bartending services for any occasion.
         </p>
         <div className="mt-6 flex flex-col space-y-4 md:flex-row md:space-x-4 md:space-y-0">
-          <Button className="bg-[hsl(var(--primary))] text-[hsl(var(--primary-foreground))] hover:bg-[hsl(var(--secondary))] hover:text-[hsl(var(--secondary-foreground))]">
-            Book Now
-          </Button>
-          <Button variant="outline" className="border-[hsl(var(--primary))] text-[hsl(var(--primary))] hover:border-[hsl(var(--secondary))] hover:text-[hsl(var(--secondary))]">
-            Learn More
-          </Button>
-        </div>
+  <Link
+    href="/quote"
+    className="inline-block px-6 py-3 text-center text-lg font-medium rounded-lg shadow-md 
+               bg-[hsl(var(--primary))] text-[hsl(var(--primary-foreground))] 
+               hover:bg-[hsl(var(--secondary))] hover:text-[hsl(var(--secondary-foreground))] 
+               transition duration-300 ease-in-out transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-[hsl(var(--secondary))] focus:ring-offset-2"
+  >
+    Book Now
+  </Link>
+</div>
       </div>
       <div className="mt-8 md:mt-0 md:w-1/2">
         <Image
