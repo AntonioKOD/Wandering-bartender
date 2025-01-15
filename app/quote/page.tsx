@@ -7,8 +7,9 @@ import * as z from "zod";
 import { Form, FormField, FormItem, FormLabel, FormControl, FormMessage } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { Select } from "@/components/ui/select";
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue, SelectGroup } from "@/components/ui/select";
 import { Button } from "@/components/ui/button";
+import Head from "next/head";
 
 const formSchema = z.object({
   fullName: z.string().min(2, { message: "Full Name must be at least 2 characters long." }),
@@ -70,6 +71,12 @@ export default function EventForm() {
 
   return (
     <div className="max-w-3xl mx-auto p-6 bg-white rounded-lg shadow-md">
+        <Head>
+            <title>Request a Quote | The Wandering Bartender</title>
+            <meta name="description" content="Get a personalized quote for our mobile bartending services. Share your event details, and we'll provide a tailored package to suit your needs."/> 
+            <meta name="keywords" content="quote, free quote, personalized quote, bartending services, bartender, mobile bartender, events"/>
+            <meta property="og:description" content="Get a personalized quote for our mobile bartending services. Share your event details, and we'll provide a tailored package to suit your needs." />
+        </Head>
       <h1 className="text-2xl font-bold text-gray-800 mb-6">Event Inquiry Form</h1>
       <Form {...form}>
         <form
@@ -102,7 +109,6 @@ export default function EventForm() {
                   <Input
                     placeholder="Email"
                     {...field}
-                    className="w-full border border-gray-300 rounded-lg shadow-sm p-2 text-sm focus:ring-2 focus:ring-blue-500 focus:outline-none"
                   />
                 </FormControl>
                 <FormMessage className="text-sm text-red-600 mt-1" />
@@ -196,24 +202,31 @@ export default function EventForm() {
             )}
           />
           <FormField
-            control={form.control}
-            name="drinkMenu"
-            render={({ field }) => (
-              <FormItem>
-                <FormLabel className="text-sm font-medium text-gray-700">Drink Menu</FormLabel>
-                <FormControl>
-                  <Select
-                    onValueChange={(value) => field.onChange(value)}
-                    defaultValue="No"
-                  >
-                    <option value="Yes">Yes</option>
-                    <option value="No">No</option>
-                  </Select>
-                </FormControl>
-                <FormMessage className="text-sm text-red-600 mt-1" />
-              </FormItem>
-            )}
-          />
+  control={form.control}
+  name="drinkMenu"
+  render={({ field }) => (
+    <FormItem>
+      <FormLabel className="text-sm font-medium text-gray-700">Drink Menu</FormLabel>
+      <FormControl>
+        <Select
+          value={field.value} // Ensure the value is properly controlled
+          onValueChange={field.onChange} // Update the field value
+        >
+          <SelectTrigger className="text-black">
+            <SelectValue placeholder='Custom Drink Menu'/>
+          </SelectTrigger>
+          <SelectContent>
+            <SelectGroup>
+              <SelectItem value="Yes">Yes</SelectItem>
+              <SelectItem value="No">No</SelectItem>
+            </SelectGroup>
+          </SelectContent>
+        </Select>
+      </FormControl>
+      <FormMessage className="text-sm text-red-600 mt-1" />
+    </FormItem>
+  )}
+/>
           <FormField
             control={form.control}
             name="specialREQUESTS"

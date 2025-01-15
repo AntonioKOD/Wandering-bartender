@@ -1,7 +1,7 @@
 'use client'
 import {useState } from "react";
 import React from "react";
-
+import Head from 'next/head';
 
 
 export default function ContactPage() {
@@ -35,6 +35,16 @@ export default function ContactPage() {
         }
 
     return (
+        <div>
+            <Head>
+                <title>Contact Us</title>
+                <meta name="title" content="Contact Us | The Wandering Bartender"/> 
+                <meta property="og:title" content="Contact Us | The Wandering Bartender" />
+                <meta name="description" content="Reach out to the Wandering Bartender for inquiries about our services, availability, or to book your event. We're here to assist you with all your bartending needs."/>
+                <meta property="og:description" content="Reach out to the Wandering Bartender for inquiries about our services, availability, or to book your event. We're here to assist you with all your bartending needs." />
+                <meta name="keywords" content="contact professional bartenders, mobile bartending inquiries, event bartending contact, hire a bartender, bartending services communication"/>
+                <meta property="og:description" content="" />
+            </Head>
       <div className="min-h-screen  py-12 px-6">
         <div className="max-w-4xl mx-auto bg-white shadow-md rounded-lg overflow-hidden">
           <div className="p-8">
@@ -109,6 +119,7 @@ export default function ContactPage() {
             </form>
           </div>
         </div>
+      </div>
       </div>
     );
   }
