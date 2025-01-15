@@ -14,7 +14,6 @@ export default function Home() {
           <meta name="keyowrds" content="alba restaurant, alba, quincy, massachusetts, bartender, mobile bartening services, professional bartenders, custom cocktails, event bartending, wedding bartending, corporate event, private party bartending, boston, drinks, bars, local bar"/>
           <meta property="og:title" content="The Wandering Bartender | Premium Mobile Bartending Services for Events"/>
           <meta property="og:description" content="The Wandering Bartender offers professional mobile bartending service for weddings, corporate events, and private parties. Elevate your event with custom cocktails and exceptional service"/>
-          <meta property="og:image" content="/wine.png"/>
           <meta property="og:url" content="https://wanderingbartender.com"/>
           <meta property="og:type" content="website"/>
           
