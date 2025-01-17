@@ -27,15 +27,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <head>
-        <GoogleAnalytics gaId="G-9RMHVY2C55"/>
-      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <NavBar />
         {children}
       </body>
+      <GoogleAnalytics gaId="G-9RMHVY2C55"/>
     </html>
   );
 }
