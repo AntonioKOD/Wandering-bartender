@@ -26,6 +26,12 @@ export default function NavBar() {
             About
           </Link>
           <Link
+            href="/pricing"
+            className="text-[hsl(var(--foreground))] hover:text-[hsl(var(--primary))] font-medium transition duration-200"
+          >
+            Pricing
+          </Link>
+          <Link
             href="/contact"
             className="text-[hsl(var(--foreground))] hover:text-[hsl(var(--primary))] font-medium transition duration-200"
           >
