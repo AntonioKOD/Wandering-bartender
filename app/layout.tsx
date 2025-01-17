@@ -33,7 +33,7 @@ export default function RootLayout({
         <NavBar />
         {children}
       </body>
-      <GoogleAnalytics gaId="G-9RMHVY2C55"/>
+      <GoogleAnalytics gaId="G-2013BE1VMP"/>
     </html>
   );
 }
