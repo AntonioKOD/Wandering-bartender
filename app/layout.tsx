@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import NavBar from "@/components/NavBar";
-import {GoogleTagManager} from '@next/third-parties/google'
+import {GoogleAnalytics} from '@next/third-parties/google'
 
 
 const geistSans = Geist({
@@ -33,7 +33,7 @@ export default function RootLayout({
         <NavBar />
         {children}
       </body>
-      <GoogleTagManager gtmId="G-9RMHVY2C55"/>
+      <GoogleAnalytics gaId="G-9RMHVY2C55"/>
     </html>
   );
 }
