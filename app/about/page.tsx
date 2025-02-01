@@ -7,17 +7,17 @@ export default function About() {
     <div className="min-h-screen py-12 px-6">
         <Head>
         <title>About Us</title>
-        <meta name="title" content="About Us | The Wandering Bartender"/>
-        <meta property="og:title" content="About Us | The Wandering Bartender"/>
-        <meta name="description" content="Learn about the Wandering Bartender's mission, our team of professional mixologists, and our commitment to delivering exceptional mobile bartending services for every event"/>
+        <meta name="title" content="About Us | The Roaming Mix"/>
+        <meta property="og:title" content="About Us | The Roaming Mix"/>
+        <meta name="description" content="Learn about The Roaming Mix's mission, our team of professional mixologists, and our commitment to delivering exceptional mobile bartending services for every event"/>
         <meta property="og:description" content="Learn about the Wandering Bartender's mission, our team of professional mixologists, and our commitment to delivering exceptional mobile bartending services for every event"/>
-        <meta name="keywords" content="about the wandering bartender, our story, mobile bartending services, professional bartenders, event bartending, mixologists, cocktails, bar setup, guest service"/>
+        <meta name="keywords" content="about the roaming mix, our story, mobile bartending services, professional bartenders, event bartending, mixologists, cocktails, bar setup, guest service"/>
         </Head>
       <div className="max-w-4xl mx-auto">
         <h1 className="text-5xl font-extrabold text-gray-800 mb-8 text-center">About Us</h1>
         <Card className="mb-6">
           <CardHeader>
-            <CardTitle>Welcome to The Wandering Bartender</CardTitle>
+            <CardTitle>Welcome to The Roaming Mix</CardTitle>
             <CardDescription>
               Bringing the bar experience to your doorstep. Professional bartending services for any occasion.
             </CardDescription>

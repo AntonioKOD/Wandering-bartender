@@ -7,7 +7,7 @@ export default function CallToAction() {
         <div className="container mx-auto px-4 relative text-center text-gray-900">
           <h2 className="text-4xl font-bold mb-4">Let’s Raise the Bar for Your Next Event!</h2>
           <p className="text-lg mb-8">
-            Experience the art of exceptional bartending with The Wandering Bartender. Let us craft unforgettable moments, one cocktail at a time.
+            Experience the art of exceptional bartending with The Roaming Mix. Let us craft unforgettable moments, one cocktail at a time.
           </p>
           <div className="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
             <Link

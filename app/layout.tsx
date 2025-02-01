@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "The Wandering Bartender",
+  title: "The Roaming Mix",
   description: "Professional mobile bartending services for any occasion.",
   keywords: [
     "mobile bartending",
@@ -26,18 +26,18 @@ export const metadata: Metadata = {
     "wandering bartender",
     "Boston bartending services",
   ],
-  authors: [{ name: "The Wandering Bartender", url: "https://wanderingbartender.com" }],
+  authors: [{ name: "The Roaming Mix", url: "https://roamingmix.com" }],
   creator: "The Wandering Bartender",
   publisher: "The Wandering Bartender",
-  metadataBase: new URL("https://wanderingbartender.com"),
+  metadataBase: new URL("https://roamingmix.com"),
   alternates: {
-    canonical: "https://wanderingbartender.com",
+    canonical: "https://roamingmix.com",
   },
   openGraph: {
     title: "The Wandering Bartender",
     description: "Bringing the bar experience to your doorstep with professional bartending services for any occasion.",
-    url: "https://wanderingbartender.com",
-    siteName: "The Wandering Bartender",
+    url: "https://roamingmix.com",
+    siteName: "The Roaming Mix",
     locale: "en_US",
     type: "website",
   },
@@ -71,18 +71,18 @@ export default function RootLayout({
               "@type": "LocalBusiness",
               "name": "The Wandering Bartender",
               "description": "Professional mobile bartending services for any occasion.",
-              "url": "https://wanderingbartender.com",
-              "logo": "https://wanderingbartender.com/favicon.ico",
+              "url": "https://roamingmix.com",
+              "logo": "https://roamingmix.com/favicon.ico",
               "sameAs": [
                 "https://www.facebook.com/profile.php?id=61572162751853",
-                "https://www.instagram.com/wanderingbartender_/"
+                "https://www.instagram.com/roamingmix/"
               ],
               "contactPoint": {
                 "@type": "ContactPoint",
                 "contactType": "Customer Service",
                 "email": "antonio_kodheli@icloud.com"
               },
-              "image": "https://wanderingbartender.com/images/og-image.jpg",
+              "image": "https://roamingmix.com/images/og-image.jpg",
               "address": {
                 "@type": "PostalAddress",
                 "addressLocality": "Boston",

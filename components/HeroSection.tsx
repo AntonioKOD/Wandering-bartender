@@ -9,7 +9,7 @@ export default function HeroSection() {
     <div className="container mx-auto flex flex-col items-center justify-center px-6 text-center md:flex-row md:text-left">
       <div className="md:w-1/2">
         <h1 className="text-4xl font-bold leading-tight md:text-5xl">
-          The Wandering Bartender
+          The Roaming Mix
         </h1>
         <p className="mt-4 text-lg md:text-xl">
           Bringing the bar experience to your doorstep. Professional

@@ -10,7 +10,7 @@ export default function Footer() {
           {/* Logo and Description */}
           <div className="text-center md:text-left mb-4 md:mb-0">
             <Link href="/" className="text-2xl font-bold">
-              The Wandering Bartender
+              The Roaming Mix
             </Link>
             <p className="mt-2 text-gray-400">
               Elevating events with exceptional bartending services.
@@ -68,7 +68,7 @@ Privacy Policy
           </ul>
           {/* Copyright */}
           <p className="text-gray-500 text-sm text-center md:text-right">
-            &copy; {new Date().getFullYear()} The Wandering Bartender. All rights reserved.
+            &copy; {new Date().getFullYear()} The Roaming Mix. All rights reserved.
           </p>
         </div>
       </div>
